@@ -10,5 +10,5 @@ Python, Git, Html
 
 ## Tech Stack
 
-Backend, Frontend
+Backend
 
