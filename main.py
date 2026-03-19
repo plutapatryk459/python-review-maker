@@ -2,29 +2,26 @@ import random
 
 
 def random_answers_good():
+     """Generate unique responses for good reviews by combining predefined text fragments."""
     start = [
-        "Dzień dobry,",
-        "Cześć,",
-        "Miło nam czytać tak pozytywne komentarze!",
-        "Dziękujemy za poświęcony czas na wystawienie opinii!",
-        "Bardzo nam miło czytać Twój komentarz",
-        "Dziękujemy za pozostawienie opinii!",
-        "Dziękujemy za Twoją opinię!",
-        "Bardzo nam miło czytać takie komentarze!"
+        "Dzień dobry, dziękujemy za Twoją opinię.",
+        "Dziękujemy za Twoją opinię.",
+        "Bardzo nam miło czytać takie słowa.",
+        "Dziękujemy za miły komentarz.",
+        "Dziękujemy za podzielenie się opinią.",
+        "Dziękujemy za pozytywną opinię."
     ]
 
     random_start= random.choice(start)
 
     ending = [
-        "staramy się, aby Klienci naszych stacji byli zadowoleni ze świadczonych przez nas usług. Cieszymy się, że to doceniasz. Pozdrawiamy serdecznie!",
-        "Dziękujemy za tak miłe słowa!",
-        "Twoja opinia motywuje nas do dalszej pracy!",
-        "Dziękujemy i życzymy wspaniałego dnia!",
-        "Życzymy wszystkiego dobrego!",
-        "Zapraszamy ponownie!",
-        "Do zobaczenia ponownie!",
-        "Dziękujemy i życzymy wspaniałego dnia!",
-        "Dziękujemy za ciepłe słowa. Codziennie staramy się, aby wizyty na naszych stacjach były jak najlepsze.  Cieszymy się, że nasi Klienci to dostrzegają. Życzymy wspaniałego dnia!"
+        "Cieszymy się, że wizyta spełniła oczekiwania.",
+        "Cieszymy się, że doświadczenie było pozytywne.",
+        "Twoja opinia motywuje nas do dalszej pracy.",
+        "Dokładamy wszelkich starań, aby każda wizyta była udana.",
+        "Zapraszamy ponownie i życzymy miłego dnia!",
+        "Pozdrawiamy serdecznie i życzymy wszystkiego dobrego!",
+        "Cieszymy się, że nasza praca została doceniona."
     ]
     ending_random = random.choice(ending)
     print(f"{random_start} {ending_random}")
@@ -34,6 +31,7 @@ def random_answers_good():
 
 
 def random_answers_bad() -> None:
+     """Generate unique responses for bad reviews by combining predefined text fragments."""
     start = [
         "Dzień dobry, dziękujemy za opinię",
         "Dziękujemy za opinię",
@@ -63,10 +61,11 @@ def random_answers_bad() -> None:
     ending_random = random.choice(ending)
     print (f"{start_random} {ending_random}")
 
+print("Negatywne")
 random_answers_bad()
-
+print("")
+print("Pozytywne")
 random_answers_good()
-
 
 
 
